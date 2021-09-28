@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// npm i react-leaflet@3.1.0 @react-leaflet/core@1.0.2
+// import 'leaflet/dist/leaflet.css'
 
 export const Container = styled.header`
   background: url(${(props)=> props.BG});
