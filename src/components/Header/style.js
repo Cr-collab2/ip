@@ -1,6 +1,5 @@
 import styled from "styled-components";
-// npm i react-leaflet@3.1.0 @react-leaflet/core@1.0.2
-// import 'leaflet/dist/leaflet.css'
+
 
 export const Container = styled.header`
   background: url(${(props)=> props.BG});
@@ -45,5 +44,61 @@ export const Container = styled.header`
          
        }
    }
+
+
+
+   section.information{
+       width: 70%;
+       margin: 0 auto;
+       display: flex;
+       background-color: white;
+       margin-top: 3rem;
+       border-radius: 0.6rem  ;
+       position:  relative;
+       flex-direction: row;
+       z-index: 1000;
+
+      
+   @media (width: 375px){
+    .mobile{
+        width: 80%;
+        height: 70%;
+        flex-direction: column ; 
+        justify-content:  center;
+        align-items:  center;
+    }
+    
+        }
+
+        
+       div{
+           margin-left: 0.2rem ;
+           width: 15rem;
+           height:  7rem;
+           display: grid;
+           align-items:  center;
+           padding-left:  1rem;
+           margin-top:  1rem;
+           margin-bottom:  1rem;
+               
+
+           & + div {
+              
+            border-left: 1px solid black;
+                
+           }
+             h2{
+                 font-size:  1.2rem;
+                 color: var(--dark-gray);
+             }
+
+             p{
+                 margin-top:  -1rem;
+                 font-size: 1.5rem;
+                 font-weight:  600;
+             }
+
+       }
+  }
 
 `
